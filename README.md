@@ -1,6 +1,6 @@
 # Battle.net Hidden Shop 
 
-Scrape product titles from the Battle.net shop using a range of product IDs. It logs in to your Battle.net account, fetches the HTML content of each product page, extracts the product titles, and saves the results to a JSON file.
+Scrape product titles from the unlisted Battle.net shop using a range of product IDs. It logs in to your Battle.net account, fetches the HTML content of each product page, extracts the product titles, and saves the results to a JSON file.
 
 ## Prerequisites
 
@@ -12,12 +12,14 @@ To run this script, you need to have the following:
 
 ## Usage
 
-1. Clone the repository or download the script file.
+1. Clone the repository.
 
 2. Open a terminal or command prompt and navigate to the directory where the script is located.
 
-3. Install the required libraries by running the following commands:
+3. Install the required libraries, requests for handling login and selectolax for HTML parsing:
+
 `pip install requests`
+
 `pip install selectolax`
 
 4. Run using the following command:
@@ -43,7 +45,16 @@ A JSON file named `battle_net_data.json` is generated in the same directory. Key
 Example output:
 ```json
 {
- "https://us.battle.net/shop/en/checkout/buy/879000": "Product Title 1",
- "https://us.battle.net/shop/en/checkout/buy/879001": "Product Title 2",
+ "https://us.battle.net/shop/en/checkout/buy/879000": "So good it's scary!",
+ "https://us.battle.net/shop/en/checkout/buy/879001": "Did you hear something?",
+ "https://us.battle.net/shop/en/checkout/buy/879002": "I'm not scared",
+ "https://us.battle.net/shop/en/checkout/buy/879003": "Things are looking grim",
+ "https://us.battle.net/shop/en/checkout/buy/879004": "I smell trouble brewing",
+ "https://us.battle.net/shop/en/checkout/buy/879005": "I'm so scared\",
+ "https://us.battle.net/shop/en/checkout/buy/879006": "Trick or treat",
+ "https://us.battle.net/shop/en/checkout/buy/879008": "Spark",
+ "https://us.battle.net/shop/en/checkout/buy/879009": "Combo",
+
+
  ...
 }
