@@ -1,6 +1,6 @@
-# Battle.net Product Title Scraper
+# Battle.net Hidden Shop 
 
-This Python script allows you to scrape product titles from the Battle.net shop using a range of product IDs. It logs in to your Battle.net account, fetches the HTML content of each product page, extracts the product titles, and saves the results to a JSON file.
+Scrape product titles from the Battle.net shop using a range of product IDs. It logs in to your Battle.net account, fetches the HTML content of each product page, extracts the product titles, and saves the results to a JSON file.
 
 ## Prerequisites
 
