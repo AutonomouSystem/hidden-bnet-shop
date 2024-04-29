@@ -50,7 +50,7 @@ Example output:
  "https://us.battle.net/shop/en/checkout/buy/879002": "I'm not scared",
  "https://us.battle.net/shop/en/checkout/buy/879003": "Things are looking grim",
  "https://us.battle.net/shop/en/checkout/buy/879004": "I smell trouble brewing",
- "https://us.battle.net/shop/en/checkout/buy/879005": "I'm so scared\",
+ "https://us.battle.net/shop/en/checkout/buy/879005": "I'm so scared",
  "https://us.battle.net/shop/en/checkout/buy/879006": "Trick or treat",
  "https://us.battle.net/shop/en/checkout/buy/879008": "Spark",
  "https://us.battle.net/shop/en/checkout/buy/879009": "Combo",
