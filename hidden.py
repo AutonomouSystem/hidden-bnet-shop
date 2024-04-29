@@ -3,8 +3,8 @@ import json
 import requests
 from selectolax.parser import HTMLParser
 
-username = input("Bnet Username")
-password = intput("Bnet Password")
+username = input("Bnet Username: ")
+password = input("Bnet Password: ")
 
 login_url = "https://us.battle.net/login/en/"
 login_payload = {
@@ -24,8 +24,8 @@ else:
     exit(1)
 
 base_url = "https://us.battle.net/shop/en/checkout/buy/"
-start_num = 879000
-end_num = 900000 
+start_num = 500000
+end_num = 780000
 
 data = {}
 
@@ -38,7 +38,7 @@ for num in range(start_num, end_num + 1):
         title_element = parser.css_first("p.product-name")
         if title_element:
             title = title_element.text()
-            data[url] = title
+            data[url] = title.strip()
         else:
             print(f"Title not found for URL: {url}")
     else:
