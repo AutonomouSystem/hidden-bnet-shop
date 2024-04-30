@@ -5,8 +5,8 @@ from selectolax.parser import HTMLParser
 from multiprocessing import Pool
 import time
 
-username = "janielsdapperdock@gmail.com"
-password = "phoenix!2"
+username = input("Bnet Username")
+password = input("Bnet Password")
 login_url = "https://us.battle.net/login/en/"
 login_payload = {
     "accountName": username,
