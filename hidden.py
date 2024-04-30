@@ -5,23 +5,27 @@ from selectolax.parser import HTMLParser
 from multiprocessing import Pool
 import time
 
-username = input("Bnet Username")
-password = input("Bnet Password")
-login_url = "https://us.battle.net/login/en/"
-login_payload = {
-    "accountName": username,
-    "password": password,
-    "submit": "Log in"
-}
-
 def login(session):
+    username = input("Bnet Username: ")
+    password = input("Bnet Password: ")
+
+    login_url = "https://us.battle.net/login/en/"
+    login_payload = {
+        "accountName": username,
+        "password": password,
+        "submit": "Log in"
+    }
+
     login_response = session.post(login_url, data=login_payload)
     if login_response.status_code == 200:
         print("Login successful!")
+        return True
     else:
         print("Login failed.")
-        exit(1)
-
+        print(f"Status code: {login_response.status_code}")
+        print(f"Response content: {login_response.text}")
+        return False
+    
 def fetch_data(args):
     session, num = args
     base_url = "https://us.battle.net/shop/en/checkout/buy/"
@@ -53,8 +57,8 @@ def save_data(data, start_num, end_num):
     print(f"Data saved to {filename}")
 
 if __name__ == "__main__":
-    start_num = 300000
-    end_num = 400000
+    start_num = 400000
+    end_num = 500000
     num_processes = 5
 
     start_time = time.time()
