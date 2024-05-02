@@ -57,8 +57,8 @@ def save_data(data, start_num, end_num):
     print(f"Data saved to {filename}")
 
 if __name__ == "__main__":
-    start_num = 400000
-    end_num = 500000
+    start_num = 1800000
+    end_num = 1900000
     num_processes = 5
 
     start_time = time.time()
