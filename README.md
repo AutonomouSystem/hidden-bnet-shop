@@ -35,8 +35,8 @@ To run this script, you need to have the following:
 
 You can adjust the start and end values to search through different listings.
 
-- `start_num`: The starting product ID for the range of products to scrape (default: 879000).
-- `end_num`: The ending product ID for the range of products to scrape (default: 900000).
+- `start_num`: The starting product ID for the range of products to scrape (default: 1700000).
+- `end_num`: The ending product ID for the range of products to scrape (default: 1800000).
 
 ## Output
 
@@ -45,16 +45,27 @@ A JSON file named `battle_net_data.json` is generated in the same directory. Key
 Example output:
 ```json
 {
- "https://us.battle.net/shop/en/checkout/buy/879000": "So good it's scary!",
- "https://us.battle.net/shop/en/checkout/buy/879001": "Did you hear something?",
- "https://us.battle.net/shop/en/checkout/buy/879002": "I'm not scared",
- "https://us.battle.net/shop/en/checkout/buy/879003": "Things are looking grim",
- "https://us.battle.net/shop/en/checkout/buy/879004": "I smell trouble brewing",
- "https://us.battle.net/shop/en/checkout/buy/879005": "I'm so scared",
- "https://us.battle.net/shop/en/checkout/buy/879006": "Trick or treat",
- "https://us.battle.net/shop/en/checkout/buy/879008": "Spark",
- "https://us.battle.net/shop/en/checkout/buy/879009": "Combo",
-
+    "https://us.battle.net/shop/en/checkout/buy/1705487": "World of Warcraft\u00ae: Lunar Pack",
+    "https://us.battle.net/shop/en/checkout/buy/1705488": "Hearthstone\u00ae: Whizbang's Catch-Up Starter Bundle",
+    "https://us.battle.net/shop/en/checkout/buy/1705489": "Hearthstone\u00ae: Whizbang's Catch-Up Starter Bundle",
+    "https://us.battle.net/shop/en/checkout/buy/1705520": "Ultimate Battle Pass Bundle: Season 10",
+    "https://us.battle.net/shop/en/checkout/buy/1705522": "Hearthstone\u00ae: Whizbang's Catch-Up Starter Bundle",
+    "https://us.battle.net/shop/en/checkout/buy/1705559": "10 Mythic Prisms",
+    "https://us.battle.net/shop/en/checkout/buy/1705560": "40 (+10 Bonus) Mythic Prisms",
+    "https://us.battle.net/shop/en/checkout/buy/1705561": "75 (+25 Bonus) Mythic Prisms",
+    "https://us.battle.net/shop/en/checkout/buy/1705588": "PVP Rations - Undead",
+    "https://us.battle.net/shop/en/checkout/buy/1705589": "PvP Rations - Horde",
+    "https://us.battle.net/shop/en/checkout/buy/1705590": "PVP Rations - Blackrock",
+    "https://us.battle.net/shop/en/checkout/buy/1705591": "PVP Rations - Beast",
+    "https://us.battle.net/shop/en/checkout/buy/1705592": "PVP Rations - Alliance",
+    "https://us.battle.net/shop/en/checkout/buy/1705593": "Gadgetzan's Grandeur",
+    "https://us.battle.net/shop/en/checkout/buy/1705802": "Hearthstone\u00ae: Darkmoon Races Golden Mini-Set",
+    "https://us.battle.net/shop/en/checkout/buy/1705963": "Knee-slapper",
+    "https://us.battle.net/shop/en/checkout/buy/1705965": "Talon Accelerator",
+    "https://us.battle.net/shop/en/checkout/buy/1705969": "Talon's Cannon",
+    "https://us.battle.net/shop/en/checkout/buy/1705977": "Tracer - Operative Oxton",
+    "https://us.battle.net/shop/en/checkout/buy/1705996": "Talon Tracer",
+    "https://us.battle.net/shop/en/checkout/buy/1705998": "Zarya - Talon",
 
  ...
 }
